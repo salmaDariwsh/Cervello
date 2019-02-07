@@ -1,0 +1,393 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="shortcut icon" type="image/png" href="contents/images/favicon.png" />
+    <link href="/contents/styles/css/crv-tempD-ltr.min.css" rel="stylesheet" />
+    <link href="contents/styles/css/loaders.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="loading-overlay">
+        <img src="contents/images/loading.GIF" class="loading-img" />
+    </div>
+    <!-- Res Menu Toggler -->
+    <input type="checkbox" id="menuTogglerMd" class="menu-toggler-md control-toggler" />
+    <label for="menuTogglerMd" class="menu-toggler-lbl-md overlay"></label>
+
+    <!-- Burger Menu Toggler -->
+    <input type="checkbox" id="menuToggler" class="menu-toggler control-toggler" />
+
+    <!-- Header -->
+    <header class="crv-header">
+        <div class="flex align-center full-height">
+
+            <!-- Res Menu-->
+            <label for="menuToggler" class="menu-lbl-xs icon-menu flex-item mr-end-auto"></label>
+
+            <!-- Logo -->
+            <h1 class="crv-logo flex-item">
+                <a href="./" class="logo-link">
+                    <img class="logo-img dark" src="/contents/images/logo.png" />
+                    <img class="logo-img light" src="/contents/images/logo-white.png" />
+                </a>
+            </h1>
+
+            <!-- Burger Menu-->
+            <label for="menuToggler" class="menuToggler-lbl pointer-cr hide-xs">
+                <i class="burger-menu-icon icon-menu"></i>
+                <span class="close-menu-lbl">
+                    <i class="icon-back"></i>
+                    <span class="close-lbl lang" key="closeMenu"></span>
+                </span>
+            </label>
+            <div class="burger-menu flex-item txt-center mr-end-auto">
+                <div class="menu-box txt-start">
+                    <div class="flex-xs flex-wrap-md flex-between">
+                        <div class="menu-col flex-item">
+                            <a href="iot-platform.html" class="menu-item-title hide-xs lang" key="iot"></a>
+                            <label for="menuIotPlatform" class="menu-item-title visible-xs">
+                                <a href="iot-platform.html" class="lang" key="iot"></a>
+                                <i class="icon-cheveron-outline-down"></i>
+                            </label>
+                            <input type="radio" id="menuIotPlatform" class="menu-box-toggler control-toggler" name="menu-box-toggler" checked />
+                            <div class="menu-box-items">
+                                <a href="iot-platform.html" class="menu-link lang" key="carvIot"></a>
+                                <a href="iot-platform.html" class="menu-link lang" key="whyCarv"></a>
+                                <a href="iot-platform.html" class="menu-link lang" key="iotArchi"></a>
+
+                            </div>
+
+                            <a href="iot-platform.html" class="menu-item-title hide-xs mr-t30 lang" key="useCases"></a>
+                            <label for="menuIotUseCases" class="menu-item-title visible-xs">
+                                <a href="iot-platform.html" class="lang" key="useCases"></a>
+                                <i class="icon-cheveron-outline-down"></i>
+                            </label>
+                            <input type="radio" id="menuIotUseCases" class="menu-box-toggler control-toggler" name="menu-box-toggler" />
+                            <div class="menu-box-items">
+                                <a href="enterprise.html" class="menu-link lang" key="enterprise"></a>
+                                <a href="industrial.html" class="menu-link lang" key="industrial"></a>
+                                <a href="small-business.html" class="menu-link lang" key="smallBusiness"></a>
+                                <a href="smart-city.html" class="menu-link lang" key="smartCity"></a>
+                                <a href="telecom.html" class="menu-link lang" key="telecom"></a>
+                            </div>
+                        </div>
+                        <div class="menu-col flex-item">
+                            <a href="solutions.html" class="menu-item-title hide-xs lang" key="solution"></a>
+                            <label for="menuSolution" class="menu-item-title visible-xs">
+                                <a href="solutions.html" class="lang" key="solution"></a>
+                                <i class="icon-cheveron-outline-down"></i>
+                            </label>
+                            <input type="radio" id="menuSolution" class="menu-box-toggler control-toggler" name="menu-box-toggler" />
+                            <div class="menu-box-items">
+                                <a href="solutions.html#one" class="menu-link bold-f lang" key="homeFifthProvideTitle"></a>
+                                <a href="automation.html" class="menu-link lang" key="automotive"></a>
+                                <a href="telecoms-providing.html" class="menu-link lang" key="telecomsProviding"></a>
+                                <a href="power-generation.html" class="menu-link lang" key="powerGeneration"></a>
+                                <a href="solutions.html#three" class="menu-link bold-f lang" key="automationControl"></a>
+                                <a href="atm-sites.html" class="menu-link lang" key="AtmSites"></a>
+                                <a href="data-center.html" class="menu-link lang" key="dataCenter"></a>
+                                <a href="oil-gas.html" class="menu-link lang" key="oilGas"></a>
+                                <a href="solutions.html#two" class="menu-link bold-f lang" key="homeFifthManagmTitle"></a>
+                                <a href="smart-cities.html" class="menu-link lang" key="smartCity"></a>
+                                <a href="smart-metering.html" class="menu-link lang" key="smartMetering"></a>
+                                <a href="smart-lighting.html" class="menu-link lang" key="smartLighting"></a>
+                                <a href="solar-generation.html" class="menu-link lang" key="solarGenerator"></a>
+                                <a href="solutions.html#four" class="menu-link bold-f lang" key="trackingFleet"></a>
+                                <a href="tracking-vehicles.html" class="menu-link lang" key="trackingVehicles"></a>
+                            </div>
+                        </div>
+                        <div class="menu-col flex-item">
+                            <a href="partners.html" class="menu-item-title hide-xs lang" key="partner"></a>
+                            <label for="menuPartners" class="menu-item-title visible-xs">
+                                <a href="partners.html" class="lang" key="partner"></a>
+                                <i class="icon-cheveron-outline-down"></i>
+                            </label>
+                            <input type="radio" id="menuPartners" class="menu-box-toggler control-toggler" name="menu-box-toggler" />
+                            <div class="menu-box-items">
+                                <a href="partners.html#PartnerProgram" class="menu-link lang" key="partnerProgram"></a>
+                                <a href="partners.html#PartnerProgram" class="menu-link lang" key="implementationPartner"></a>
+                                <a href="partners.html#PartnerProgram" class="menu-link lang" key="hardwarePartner"></a>
+                                <a href="partners.html#Testimonials" class="menu-link lang" key="testimonials"></a>
+                                <a href="partners.html#BePartner" class="menu-link lang" key="becomePartner"></a>
+                            </div>
+
+
+                            <a href="case-studies.html" class="menu-item-title mr-t30 lang" key="caseStudies"></a>
+
+                        </div>
+                        <div class="menu-col flex-item">
+                            <a href="company.html" class="menu-item-title hide-xs lang" key="company"></a>
+                            <label for="menuCompany" class="menu-item-title visible-xs">
+                                <a href="company.html" class="lang" key="company"></a>
+                                <i class="icon-cheveron-outline-down"></i>
+                            </label>
+                            <input type="radio" id="menuCompany" class="menu-box-toggler control-toggler" name="menu-box-toggler" />
+                            <div class="menu-box-items">
+                                <a href="company.html#OurCompany" class="menu-link lang" key="ourStory"></a>
+                                <a href="company.html#OurHistory" class="menu-link lang" key="ourHistory"></a>
+                                <a href="company.html#OurClients" class="menu-link lang" key="ourClients"></a>
+                                <a href="company.html" class="menu-link lang" key="mediaEvents"></a>
+                                <a href="download-center.html" class="menu-link lang" key="downloadCenter"></a>
+
+                            </div>
+                            <a href="community.html" class="menu-item-title mr-t30 hide-xs lang" key="comunnity"></a>
+                            <label for="menuCommunity" class="menu-item-title visible-xs">
+                                <a href="community.html" class="lang" key="comunnity"></a>
+                                <i class="icon-cheveron-outline-down"></i>
+                            </label>
+                            <input type="radio" id="menuCommunity" class="menu-box-toggler control-toggler" name="menu-box-toggler" />
+                            <div class="menu-box-items">
+                                <a href="resources.html" class="menu-link lang" key="resourcesHelpDocs"></a>
+                                <a href="white-paper.html" class="menu-link lang" key="whitePaper"></a>
+                                <a href="white-paper.html" class="menu-link lang" key="productGuide"></a>
+                                <a href="gdpr.html" class="menu-link lang" key="gdbr"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mr-t30-xs visible-xs signUp-xs">
+                        <a href="#" class="capitalize in-block mr-end10 lang" key="tryDemo"></a>
+                        <a href="signUp.html" class="signup-btn crv-btn primary-btn cornered-btn size-md uppercase lang" key="signUp"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Res Extra Menu -->
+            <div class="extra-menu-lbl-xs">
+                <a href="signUp.html" class="crv-btn cornered uppercase flex-item lang" key="signUp"></a>
+            </div>
+
+            <!-- Menu-->
+            <div class="header-links-start flex-item  txt-center mr-end-auto">
+                <a href="resources.html" class="header-link lang" key="resources"></a>
+                <a href="gdpr.html" class="header-link lang" key="gdbr"></a>
+            </div>
+
+            <!-- Estra Menu-->
+            <div class="header-links-end flex-item">
+                <a href="#" class="header-link lang" key="tryDemo"></a>
+                <a href="signUp.html" class="crv-btn primary-btn cornered-btn size-md uppercase lang" key="signUp"></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="community bg_gradient-diagonal">
+
+        <!-- First section-->
+        <section class="first-section">
+            <div class="container">
+                <h2 class="main-title lang" key="comunnity"></h2>
+                <p class="main-txt mr-t30 full-width-xs lang" key="comunityDesc">
+
+                </p>
+                <div class="section-links mr-t150 txt-center mr-t50-xs">
+                    <a href="#O" class="crv-btn secondary-btn size-md size-long cornered-btn uppercase lang" key="carvBlog"></a>
+                    <span class="block-xs mr-b10-xs"></span>
+                    <a href="#" class="crv-btn secondary-btn size-md size-long cornered-btn uppercase mr-start10 zero-mrg-xs lang" key="resources">
+                        
+                    </a>
+                    <span class="block-xs mr-b10-xs"></span>
+                    <a href="#" class="crv-btn secondary-btn size-md size-long cornered-btn uppercase mr-start10 zero-mrg-xs lang" key="gdbr">
+                        
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Second Section -->
+        <section class="second-section mr-t150">
+            <div class="container">
+
+                <!-- first -->
+                <div class="section-item first flex-xs flex-between align-end">
+                    <div class="start flex-item zero-padd-lg full-width-xs">
+                        <div class="item-img-wrapper">
+                            <img src="contents/images/Surface1.png" class="item-img" />
+                        </div>
+                        <div class="item-title lang" key="communityArticle1Title"></div>
+                        <div class="item-txt visible-xs lang" key="communityArticle1Desc">
+                        </div>
+                    </div>
+                    <div class="end flex-item">
+                        <div class="item-img-wrapper">
+                            <img src="contents/images/Surface1.png" class="item-img" />
+                        </div>
+                        <div class="item-title lang" key="communityArticle2Title"></div>
+                        <div class="item-txt visible-xs lang" key="communityArticle2Desc">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- second -->
+                <div class="section-item second flex-xs flex-between align-top">
+                    <div class="start flex-item">
+                        <div class="item-txt zero-padd-lg hide-xs lang" key="communityArticle3Desc">
+                        </div>
+                        <div class="item-img-wrapper">
+                            <img src="contents/images/Surface1.png" class="item-img" />
+                        </div>
+                        <div class="item-title lang" key="communityArticle3Title"></div>
+                        <div class="item-txt visible-xs lang" key="communityArticle3Desc">
+                        </div>
+                    </div>
+                    <div class="end flex-item">
+                        <div class="item-txt zero-padd-lg hide-xs lang" key="communityArticle3Desc">
+                        </div>
+                        <div class="item-img-wrapper">
+                            <img src="contents/images/Surface1.png" class="item-img" />
+                        </div>
+                        <div class="item-title lang" key="communityEvent1Title"></div>
+                    </div>
+                </div>
+
+                <!-- third -->
+                <div class="section-item third flex-xs flex-between align-top">
+                    <div class="start flex-item">
+                        <div class="item-txt hide-xs lang" key="communityArticle3Desc">
+                        </div>
+                        <div class="item-img-wrapper">
+                            <img src="contents/images/Surface1.png" class="item-img" />
+                        </div>
+                        <div class="item-title lang" key="communityArticle4Title"></div>
+                        <div class="item-txt lang" key="communityArticle4Desc">
+                        </div>
+                    </div>
+                    <div class="end flex-item mr-t10 zero-padd-lg">
+
+                        <div class="item-img-wrapper zero-mrg">
+                            <img src="contents/images/Surface1.png" class="item-img" />
+                        </div>
+                        <div class="item-title lang" key="communityArticle5Title"></div>
+                        <div class="item-txt lang" key="communityArticle5Desc">
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- forth -->
+                <div class="section-item forth flex-xs flex-between align-top">
+                    <div class="start flex-item">
+                        <div class="subscribe-box no-border mr-t30">
+                            <h4 class="item-title full-width zero-mrg zero-padd lang" key="comunnitySubscribe">
+                            </h4>
+                            <div class="boxed-input-container mr-t30">
+                                <input type="email" class="default-input full-width-xs lang control" placeholder="" key="email"  />
+                                <a class="crv-btn primary-btn squared-btn lang" key="subscribe"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="end flex-item">
+                        <div class="item-img-wrapper">
+                            <img src="contents/images/Surface1.png" class="item-img" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- fifth -->
+                <div class="section-item fifth flex-xs flex-between align-top">
+                    <div class="start flex-item">
+                        <div class="item-img-wrapper">
+                            <img src="contents/images/Surface1.png" class="item-img" />
+                        </div>
+                        <div class="item-title lang" key="communityArticle6Title"></div>
+
+                        <div class="item-txt lang" key="communityArticle6Desc">
+                        </div>
+                    </div>
+                    <div class="end flex-item mr-t10">
+                        <div class="item-title lang" key="communityArticle7Title"></div>
+
+                        <div class="item-txt lang" key="communityArticle7Desc">
+                        </div>
+                        <div class="item-img-wrapper">
+                            <img src="contents/images/Surface1.png" class="item-img" />
+                        </div>
+                        <div class="item-title lang" key="communityEvent2Title"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="crv-footer mr-t150">
+            <div class="container">
+
+                <article class="bottom-section flex-md flex-between align-end">
+                    <div class="start-section flex-item flex-xxs ">
+                        <div class="item-content flex-item">
+                            <h6 class="item-title lang" key="cervello"></h6>
+                            <input type="radio" id="FooterToggler1" name="FooterToggler" class="footer-toggler control-toggler" />
+                            <label for="FooterToggler1" class="footer-toggler-lbl">
+                                <span class="lbl-txt lang" key="cervello"></span>
+                                <span class="lbl-icon icon-cheveron-down"></span>
+                            </label>
+                            <div class="item-links">
+                                <a class="item-link lang" key='iot' href="iot-platform.html"></a>
+                                <a class="item-link lang" key='solution' href="solutions.html"></a>
+                                <a class="item-link lang" key='partner' href="partners.html"></a>
+                                <a class="item-link lang" key='company' href="company.html"></a>
+                                <a class="item-link lang" key='comunnity' href="community.html"></a>
+                            </div>
+                        </div>
+
+                        <div class="item-content flex-item">
+                            <h6 class="item-title lang" key="useCases"></h6>
+                            <input type="radio" id="FooterToggler2" name="FooterToggler" class="footer-toggler control-toggler" />
+                            <label for="FooterToggler2" class="footer-toggler-lbl">
+                                <span class="lbl-txt lang" key="useCases"></span>
+                                <span class="lbl-icon icon-cheveron-down"></span>
+                            </label>
+                            <div class="item-links">
+                                <a class="item-link lang" key="enterprise"></a>
+                                <a class="item-link lang" key="industrial"></a>
+                                <a class="item-link lang" key="smallBusiness"></a>
+                                <a class="item-link lang" key="smartCity"></a>
+                                <a href="telecom.html" class="item-link lang" key="telecom"></a>
+                            </div>
+                        </div>
+                        <div class="item-content flex-item">
+                            <h6 class="item-title lang" key="about"></h6>
+                            <input type="radio" id="FooterToggler3" name="FooterToggler" class="footer-toggler control-toggler" />
+                            <label for="FooterToggler3" class="footer-toggler-lbl">
+                                <span class="lbl-txt lang" key="about"></span>
+                                <span class="lbl-icon icon-cheveron-down"></span>
+                            </label>
+                            <div class="item-links">
+                                <a class="item-link lang" key="caseStudies" href="case-studies.html"></a>
+                                <a class="item-link lang" key="whoWeAre" href="iot-platform.html"></a>
+                                <a class="item-link lang" key="whyCervello" href="iot-platform.html"></a>
+                                <a class="item-link lang" key="contactUs" href="contactUs.html"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="end-section flex-item txt-end">
+                        <div class="social-media-links">
+                            <a href="" class="item-link">
+                                <i class="icon-twitter"></i>
+                            </a>
+                            <a href="" class="item-link">
+                                <i class="icon-linkedin"></i>
+                            </a>
+                            <a href="" class="item-link">
+                                <i class="icon-vimeo"></i>
+                            </a>
+                        </div>
+                        <div class="mr-t20 lang" key="copyRight"></div>
+                        <div class="language-container mr-t10"></div>
+
+                    </div>
+                </article>
+            </div>
+        </footer>
+
+    </section>
+    <script src="/contents/scripts/bundled/app.crv-localization.min.js"></script>
+
+</body>
+</html>

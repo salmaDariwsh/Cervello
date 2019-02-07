@@ -1,0 +1,539 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="shortcut icon" type="image/png" href="contents/images/favicon.png" />
+
+    <link href="contents/styles/css/crv-tempH-ltr.min.css" rel="stylesheet" />
+    <link href="contents/styles/css/loaders.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="loading-overlay">
+        <img src="contents/images/loading.GIF" class="loading-img" />
+    </div>
+    <input type="checkbox" id="headerToggler" class="header-toggler control-toggler" />
+    <label for="headerToggler" class="header-toggler-lbl overlay"></label>
+
+    <!-- Burger Menu Toggler -->
+    <input type="checkbox" id="menuToggler" class="menu-toggler control-toggler" />
+
+    <!-- Header -->
+    <header class="crv-header">
+        <div class="flex align-center full-height ">
+
+            <!-- Res Menu-->
+            <label for="menuToggler" class="menu-lbl-xs icon-menu flex-item mr-end-auto"></label>
+
+            <!-- Logo -->
+            <h1 class="crv-logo flex-item">
+                <a href="./" class="logo-link">
+                    <img class="logo-img dark" src="contents/images/logo.png" />
+                    <img class="logo-img light" src="contents/images/logo-white.png" />
+                </a>
+            </h1>
+
+            <!-- Burger Menu-->
+            <label for="menuToggler" class="menuToggler-lbl pointer-cr hide-xs">
+                <i class="burger-menu-icon icon-menu"></i>
+                <span class="close-menu-lbl">
+                    <i class="icon-back"></i>
+                    <span class="close-lbl lang" key="closeMenu"></span>
+                </span>
+            </label>
+
+            <div class="burger-menu flex-item txt-center mr-end-auto">
+                <div class="menu-box txt-start">
+                    <div class="flex-xs flex-wrap-md flex-between">
+                        <div class="menu-col flex-item">
+                            <a href="iot-platform.html" class="menu-item-title hide-xs lang" key="iot"></a>
+                            <label for="menuIotPlatform" class="menu-item-title visible-xs">
+                                <a href="iot-platform.html" class="lang" key="iot"></a>
+                                <i class="icon-cheveron-outline-down"></i>
+                            </label>
+                            <input type="radio" id="menuIotPlatform" class="menu-box-toggler control-toggler" name="menu-box-toggler" checked />
+                            <div class="menu-box-items">
+                                <a href="iot-platform.html" class="menu-link lang" key="carvIot"></a>
+                                <a href="iot-platform.html" class="menu-link lang" key="whyCarv"></a>
+                                <a href="iot-platform.html" class="menu-link lang" key="iotArchi"></a>
+
+                            </div>
+
+                            <a href="iot-platform.html" class="menu-item-title hide-xs mr-t30 lang" key="useCases"></a>
+                            <label for="menuIotUseCases" class="menu-item-title visible-xs">
+                                <a href="iot-platform.html" class="lang" key="useCases"></a>
+                                <i class="icon-cheveron-outline-down"></i>
+                            </label>
+                            <input type="radio" id="menuIotUseCases" class="menu-box-toggler control-toggler" name="menu-box-toggler" />
+                            <div class="menu-box-items">
+                                <a href="enterprise.html" class="menu-link lang" key="enterprise"></a>
+                                <a href="industrial.html" class="menu-link lang" key="industrial"></a>
+                                <a href="small-business.html" class="menu-link lang" key="smallBusiness"></a>
+                                <a href="smart-city.html" class="menu-link lang" key="smartCity"></a>
+                                <a href="telecom.html" class="menu-link lang" key="telecom"></a>
+                            </div>
+                        </div>
+                        <div class="menu-col flex-item">
+                            <a href="solutions.html" class="menu-item-title hide-xs lang" key="solution"></a>
+                            <label for="menuSolution" class="menu-item-title visible-xs">
+                                <a href="solutions.html" class="lang" key="solution"></a>
+                                <i class="icon-cheveron-outline-down"></i>
+                            </label>
+                            <input type="radio" id="menuSolution" class="menu-box-toggler control-toggler" name="menu-box-toggler" />
+                            <div class="menu-box-items">
+                                <a href="solutions.html#one" class="menu-link bold-f lang" key="homeFifthProvideTitle"></a>
+                                <a href="automation.html" class="menu-link lang" key="automotive"></a>
+                                <a href="telecoms-providing.html" class="menu-link lang" key="telecomsProviding"></a>
+                                <a href="power-generation.html" class="menu-link lang" key="powerGeneration"></a>
+                                <a href="solutions.html#three" class="menu-link bold-f lang" key="automationControl"></a>
+                                <a href="atm-sites.html" class="menu-link lang" key="AtmSites"></a>
+                                <a href="data-center.html" class="menu-link lang" key="dataCenter"></a>
+                                <a href="oil-gas.html" class="menu-link lang" key="oilGas"></a>
+                                <a href="solutions.html#two" class="menu-link bold-f lang" key="homeFifthManagmTitle"></a>
+                                <a href="smart-cities.html" class="menu-link lang" key="smartCity"></a>
+                                <a href="smart-metering.html" class="menu-link lang" key="smartMetering"></a>
+                                <a href="smart-lighting.html" class="menu-link lang" key="smartLighting"></a>
+                                <a href="solar-generation.html" class="menu-link lang" key="solarGenerator"></a>
+                                <a href="solutions.html#four" class="menu-link bold-f lang" key="trackingFleet"></a>
+                                <a href="tracking-vehicles.html" class="menu-link lang" key="trackingVehicles"></a>
+                            </div>
+                        </div>
+                        <div class="menu-col flex-item">
+                            <a href="partners.html" class="menu-item-title hide-xs lang" key="partner"></a>
+                            <label for="menuPartners" class="menu-item-title visible-xs">
+                                <a href="partners.html" class="lang" key="partner"></a>
+                                <i class="icon-cheveron-outline-down"></i>
+                            </label>
+                            <input type="radio" id="menuPartners" class="menu-box-toggler control-toggler" name="menu-box-toggler" />
+                            <div class="menu-box-items">
+                                <a href="partners.html#PartnerProgram" class="menu-link lang" key="partnerProgram"></a>
+                                <a href="partners.html#PartnerProgram" class="menu-link lang" key="implementationPartner"></a>
+                                <a href="partners.html#PartnerProgram" class="menu-link lang" key="hardwarePartner"></a>
+                                <a href="partners.html#Testimonials" class="menu-link lang" key="testimonials"></a>
+                                <a href="partners.html#BePartner" class="menu-link lang" key="becomePartner"></a>
+                            </div>
+
+
+                            <a href="case-studies.html" class="menu-item-title mr-t30 lang" key="caseStudies"></a>
+
+                        </div>
+                        <div class="menu-col flex-item">
+                            <a href="company.html" class="menu-item-title hide-xs lang" key="company"></a>
+                            <label for="menuCompany" class="menu-item-title visible-xs">
+                                <a href="company.html" class="lang" key="company"></a>
+                                <i class="icon-cheveron-outline-down"></i>
+                            </label>
+                            <input type="radio" id="menuCompany" class="menu-box-toggler control-toggler" name="menu-box-toggler" />
+                            <div class="menu-box-items">
+                                <a href="company.html#OurCompany" class="menu-link lang" key="ourStory"></a>
+                                <a href="company.html#OurHistory" class="menu-link lang" key="ourHistory"></a>
+                                <a href="company.html#OurClients" class="menu-link lang" key="ourClients"></a>
+                                <a href="company.html" class="menu-link lang" key="mediaEvents"></a>
+                                <a href="download-center.html" class="menu-link lang" key="downloadCenter"></a>
+
+                            </div>
+                            <a href="community.html" class="menu-item-title mr-t30 hide-xs lang" key="comunnity"></a>
+                            <label for="menuCommunity" class="menu-item-title visible-xs">
+                                <a href="community.html" class="lang" key="comunnity"></a>
+                                <i class="icon-cheveron-outline-down"></i>
+                            </label>
+                            <input type="radio" id="menuCommunity" class="menu-box-toggler control-toggler" name="menu-box-toggler" />
+                            <div class="menu-box-items">
+                                <a href="resources.html" class="menu-link lang" key="resourcesHelpDocs"></a>
+                                <a href="white-paper.html" class="menu-link lang" key="whitePaper"></a>
+                                <a href="white-paper.html" class="menu-link lang" key="productGuide"></a>
+                                <a href="gdpr.html" class="menu-link lang" key="gdbr"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mr-t30-xs visible-xs signUp-xs">
+                        <a href="#" class="capitalize in-block mr-end10 lang" key="tryDemo"></a>
+                        <a href="signUp.html" class="signup-btn crv-btn primary-btn cornered-btn size-md uppercase lang" key="signUp"></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Res Extra Menu -->
+            <div class="extra-menu-lbl-xs">
+                <a href="signUp.html" class="crv-btn cornered uppercase flex-item lang" key="signUp"></a>
+            </div>
+
+            <!-- Menu-->
+            <!-- Estra Menu-->
+            <div class="header-links-end flex-item">
+                <a href="#" class="header-link lang" key="tryDemo"></a>
+                <a href="signUp.html" class="signup-btn crv-btn primary-btn cornered-btn size-md lang" key="signUp"></a>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="telecom">
+
+        <ul id="menu" class="nav-menu">
+            <li data-menuanchor="firstPage" class="nav-menu-item active"><a href="#firstPage">01</a></li>
+            <li data-menuanchor="secondPage" class="nav-menu-item"><a href="#secondPage">02</a></li>
+            <li data-menuanchor="3rdPage" class="nav-menu-item"><a href="#3rdPage">03</a></li>
+            <li data-menuanchor="4thPage" class="nav-menu-item"><a href="#4thPage">04</a></li>
+            <li data-menuanchor="5thPage" class="nav-menu-item"><a href="#5thPage">05</a></li>
+            <li data-menuanchor="6thPage" class="nav-menu-item"><a href="#6thPage">06</a></li>
+            <li data-menuanchor="7thPage" class="nav-menu-item"><a href="#7thPage">07</a></li>
+            <li data-menuanchor="8thPage" class="nav-menu-item"><a href="#8thPage">08</a></li>
+        </ul>
+
+        <div id="fullpage" class="slides-wrapper">
+
+            <div class="first-section section active fp-auto-height-responsive txt-center" id="section0">
+                <div class="container">
+                    <img class="section-bg" src="contents/images/SVG/temp-h/Frame.svg" />
+                    <div class="section-content">
+                        <h2 class="item-title" key="telecomFirstSecTitle">
+                            Smart City
+                        </h2>
+                        <p class="item-txt lang" key="telecomFirstSecDesc">
+                        </p>
+                        <div class="mr-t20">
+                            <a href="signUp.html" class="item-link crv-btn primary-btn cornered-btn uppercase size-md lang" key="signUpNow"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="second-section section fp-auto-height-responsive" id="section1">
+                <h5 class="slide-title">
+                    <span class="title-txt uppercase lang" key="telecom"></span>
+                    <span class="separator"></span>
+                    <span class="title-txt capitalize lang" key="solution"></span>
+                </h5>
+                <div class="container">
+                    <div class="flex-md align-center">
+                        <div class="item-img-wrapper flex-item rounded size-lg mr-end100 mr-auto-md">
+                            <img class="item-img" src="contents/images/Surface.png" />
+                        </div>
+                        <div class="flex-item">
+                            <h4 class="item-title semi-bold-f mr-t20-md lang" key="telecomSecondSecTitle"></h4>
+                            <p class="item-txt mr-t40 mr-t20-md lang" key="telecomSecondSecDesc1">
+                            </p>
+
+                            <p class="item-txt mr-t40 mr-t20-md lang" key="telecomSecondSecDesc2">
+                            </p>
+
+                            <p class="item-txt mr-t40 mr-t20-md lang" key="telecomSecondSecDesc3">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="third-section section fp-auto-height-responsive" id="section2">
+                <h5 class="slide-title">
+                    <span class="title-txt uppercase lang" key="telecom"></span>
+                    <span class="separator"></span>
+                    <span class="title-txt capitalize lang" key="solution"></span>
+                </h5>
+                <div class="container">
+                    <div class="flex-md flex-between align-center">
+                        <div class="video-wrapper flex-item">
+                            <video controls>
+                                <source data-src="contents/video/2.MOV" type="video/mp4" />
+                            </video>
+                        </div>
+                        <div class="item-content flex-item">
+                            <h2 class="item-title lang" key="telecomThirdSecTitle"></h2>
+                            <p class="mr-t40 mr-t20-md lang" key="telecomThirdSecDesc1">
+                            </p>
+                        </div>
+                    </div>
+                    <p class="mr-t40 mr-t20-md lang" key="telecomThirdSecDesc2">
+                    </p>
+                </div>
+            </div>
+
+            <div class="forth-section section fp-auto-height-responsive txt-center" id="section3">
+                <h5 class="slide-title">
+                    <span class="title-txt uppercase lang" key="telecom"></span>
+                    <span class="separator"></span>
+                    <span class="title-txt capitalize lang" key="solution"></span>
+                </h5>
+                <div class="container">
+                    <h2 class="section-title lang" key="telecomFourthSecTitle"></h2>
+                    <p class="section-txt mr-t20 lang" key="telecomFourthSecDesc">
+                    </p>
+
+                    <div class="telecom-carousel1 owl-carousel owl-theme flex align-stretch mr-t30">
+                        <div class="carousel-item">
+                            <div class="item-img-wrapper flex-item">
+                                <img class="item-img" src="contents/images/Surface.png" />
+                            </div>
+                            <div class="item-txt lang" key="telecomFourthSecItem1Title">
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="item-img-wrapper flex-item">
+                                <img class="item-img" src="contents/images/Surface.png" />
+                            </div>
+                            <div class="item-txt lang" key="telecomFourthSecItem2Title">
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="item-img-wrapper flex-item">
+                                <img class="item-img" src="contents/images/Surface.png" />
+                            </div>
+                            <div class="item-txt lang" key="telecomFourthSecItem3Title">
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="item-img-wrapper flex-item">
+                                <img class="item-img" src="contents/images/Surface.png" />
+                            </div>
+                            <div class="item-txt lang" key="telecomFourthSecItem4Title">
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="item-img-wrapper flex-item">
+                                <img class="item-img" src="contents/images/Surface.png" />
+                            </div>
+                            <div class="item-txt lang" key="telecomFourthSecItem5Title">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="fifth-section section fp-auto-height-responsive" id="section4">
+                <h5 class="slide-title">
+                    <span class="title-txt uppercase lang" key="telecom"></span>
+                    <span class="separator"></span>
+                    <span class="title-txt capitalize lang" key="solution"></span>
+                </h5>
+                <div class="container">
+                    <div class="telecom-carousel2 owl-carousel owl-theme flex align-stretch mr-t30">
+
+                        <div class="carousel-item">
+                            <div class="mr-b5 lang" key="telecomFifthSecItem1Title"></div>
+                            <h4 class="item-title lang" key="telecomFifthSecItem1SubTitle"></h4>
+                            <div class="item-txt lang" key="telecomFifthSecItem1Desc">
+                            </div>
+                            <div class="item-link txt-center-xs">
+                                <a class="crv-btn cornered-btn trans-btn light uppercase lang" key="learnMore"></a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="mr-b5 lang" key="telecomFifthSecItem2Title"></div>
+                            <h4 class="item-title lang" key="telecomFifthSecItem2SubTitle"></h4>
+                            <div class="item-txt lang" key="telecomFifthSecItem2Desc">
+                            </div>
+                            <div class="item-link txt-center-xs">
+                                <a class="crv-btn cornered-btn trans-btn light uppercase lang" key="learnMore"></a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="mr-b5 lang" key="telecomFifthSecItem3Title"></div>
+                            <h4 class="item-title lang" key="telecomFifthSecItem3SubTitle"></h4>
+                            <div class="item-txt lang" key="telecomFifthSecItem3Desc">
+                            </div>
+                            <div class="item-link txt-center-xs">
+                                <a class="crv-btn cornered-btn trans-btn light uppercase lang" key="learnMore"></a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="mr-b5 lang" key="telecomFifthSecItem4Title"></div>
+                            <h4 class="item-title lang" key="telecomFifthSecItem4SubTitle"></h4>
+                            <div class="item-txt lang" key="telecomFifthSecItem4Desc">
+                            </div>
+                            <div class="item-link txt-center-xs">
+                                <a class="crv-btn cornered-btn trans-btn light uppercase lang" key="learnMore"></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="sixth-section section fp-auto-height-responsive" id="section5">
+                <h5 class="slide-title">
+                    <span class="title-txt uppercase lang" key="telecom"></span>
+                    <span class="separator"></span>
+                    <span class="title-txt capitalize lang" key="solution"></span>
+                </h5>
+                <div class="container">
+                    <div class="flex-md flex-around">
+                        <div class="section-item flex-item">
+                            <div class="item-img-wrapper rounded">
+                                <img class="item-img" src="contents/images/Surface.png" alt="" />
+                            </div>
+                            <div class="item-txt mr-t30  mr-t10-md lang" key="telecomSixthSecItem1Title">
+                            </div>
+                        </div>
+
+                        <div class="section-item flex-item">
+                            <div class="item-img-wrapper rounded">
+                                <img class="item-img" src="contents/images/Surface.png" alt="" />
+                            </div>
+                            <div class="item-txt mr-t30 mr-t10-md lang" key="telecomSixthSecItem2Title">
+                            </div>
+                        </div>
+
+                        <div class="section-item flex-item">
+                            <div class="item-img-wrapper rounded">
+                                <img class="item-img" src="contents/images/Surface.png" alt="" />
+                            </div>
+                            <div class="item-txt mr-t30  mr-t10-md lang" key="telecomSixthSecItem3Title">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="svnth-section  section fp-auto-height-responsive" id="section6">
+                <!-- 7th sec -->
+                <h5 class="slide-title">
+                    <span class="title-txt uppercase lang" key="telecom"></span>
+                    <span class="separator"></span>
+                    <span class="title-txt capitalize lang" key="solution"></span>
+                </h5>
+                <div class="container">
+                    <div class="flex-xs flex-between align-center">
+                        <div class="flex-item half-width txt-end full-width-xs">
+                            <div class="telecom-carousel3 owl-carousel owl-theme ">
+                                <div class="carousel-item">
+                                    <img class="item-mg" src="contents/images/SVG/temp-b/sol1.png" />
+                                    <div class="item-content flex flex-col flex-end ">
+                                        <div class="item-hint sub-title2 lang" key="telecomSvnthSecItem1Title2"></div>
+                                        <p class="item-txt body2 lang" key="telecomSvnthSecItem1Desc"></p>
+                                        <h5 class="item-title mr-t20 lang" key="telecomSvnthSecItem1Title"></h5>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img class="item-mg" src="contents/images/SVG/temp-b/sol1.png" />
+                                    <div class="item-content flex flex-col flex-end ">
+                                        <div class="item-hint sub-title2 lang" key="telecomSvnthSecItem2Title2"></div>
+                                        <p class="item-txt body2 lang" key="telecomSvnthSecItem2Desc"></p>
+                                        <h5 class="item-title mr-t20 lang" key="telecomSvnthSecItem2Title"></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="section-list flex-item mr-t30-xs full-width-xs">
+                            <li class="list-item lang" key="telecomSvnthSecList1"></li>
+                            <li class="list-item lang" key="telecomSvnthSecList2"></li>
+                            <li class="list-item lang" key="telecomSvnthSecList3"></li>
+                            <li class="list-item lang" key="telecomSvnthSecList4"></li>
+                            <li class="list-item lang" key="telecomSvnthSecList5"></li>
+                            <li class="list-item lang" key="telecomSvnthSecList6"></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section fp-auto-height-responsive" id="section7">
+                <div class="container">
+                    <footer class="crv-footer">
+                        <div class="container">
+                            <article class="top-section">
+                                <div class="item-content">
+                                    <div class="item-slogan lang" key="slogan"></div>
+                                    <div class="item-main-txt lang" key="start"></div>
+                                </div>
+                                <div class="item-links">
+                                    <a href="signUp.html" class="crv-btn primary-btn cornered-btn lang" key="signUp"></a>
+                                    <a class="crv-btn cornered-btn lang" key="live"></a>
+                                </div>
+                                <div class="item-slogan light-f uppercase mr-t50 lang" key="secSlogan"></div>
+                                <a href="iot-platform.html" class="mr-t40 in-block">
+                                    <span class="lang mr-end5" key="iot"></span>
+                                    <i class="icon-radio-button-fill"></i>
+                                </a>
+                            </article>
+
+                            <article class="bottom-section flex-md flex-between align-end">
+                                <div class="start-section flex-item flex-xxs ">
+                                    <div class="item-content flex-item">
+                                        <h6 class="item-title lang" key="cervello"></h6>
+                                        <input type="radio" id="FooterToggler1" name="FooterToggler" class="footer-toggler control-toggler" />
+                                        <label for="FooterToggler1" class="footer-toggler-lbl">
+                                            <span class="lbl-txt lang" key="cervello"></span>
+                                            <span class="lbl-icon icon-cheveron-down"></span>
+                                        </label>
+                                        <div class="item-links">
+                                            <a class="item-link lang" key='iot' href="iot-platform.html"></a>
+                                            <a class="item-link lang" key='solution' href="solutions.html"></a>
+                                            <a class="item-link lang" key='partner' href="partners.html"></a>
+                                            <a class="item-link lang" key='company' href="company.html"></a>
+                                            <a class="item-link lang" key='comunnity' href="community.html"></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="item-content flex-item">
+                                        <h6 class="item-title lang" key="useCases"></h6>
+                                        <input type="radio" id="FooterToggler2" name="FooterToggler" class="footer-toggler control-toggler" />
+                                        <label for="FooterToggler2" class="footer-toggler-lbl">
+                                            <span class="lbl-txt lang" key="useCases"></span>
+                                            <span class="lbl-icon icon-cheveron-down"></span>
+                                        </label>
+                                        <div class="item-links">
+                                            <a class="item-link lang" key="enterprise"></a>
+                                            <a class="item-link lang" key="industrial"></a>
+                                            <a class="item-link lang" key="smallBusiness"></a>
+                                            <a class="item-link lang" key="smartCity"></a>
+                                            <a href="telecom.html" class="item-link lang" key="telecom"></a>
+                                        </div>
+                                    </div>
+                                    <div class="item-content flex-item">
+                                        <h6 class="item-title lang" key="about"></h6>
+                                        <input type="radio" id="FooterToggler3" name="FooterToggler" class="footer-toggler control-toggler" />
+                                        <label for="FooterToggler3" class="footer-toggler-lbl">
+                                            <span class="lbl-txt lang" key="about"></span>
+                                            <span class="lbl-icon icon-cheveron-down"></span>
+                                        </label>
+                                        <div class="item-links">
+                                            <a class="item-link lang" key="caseStudies" href="case-studies.html"></a>
+                                            <a class="item-link lang" key="whoWeAre" href="iot-platform.html"></a>
+                                            <a class="item-link lang" key="whyCervello" href="iot-platform.html"></a>
+                                            <a class="item-link lang" key="contactUs" href="contactUs.html"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="end-section flex-item txt-end">
+                                    <div class="social-media-links">
+                                        <a href="" class="item-link">
+                                            <i class="icon-twitter"></i>
+                                        </a>
+                                        <a href="" class="item-link">
+                                            <i class="icon-linkedin"></i>
+                                        </a>
+                                        <a href="" class="item-link">
+                                            <i class="icon-vimeo"></i>
+                                        </a>
+                                    </div>
+                                    <div class="mr-t20 lang" key="copyRight"></div>
+                                    <div class="language-container mr-t10"></div>
+
+                                </div>
+                            </article>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="contents//scripts/bundled/app.crv-telecome.js"></script>
+</body>
+</html>

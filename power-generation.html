@@ -1,0 +1,472 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="shortcut icon" type="image/png" href="contents/images/favicon.png" />
+
+    <link href="/contents/styles/css/crv-tempD-ltr.min.css" rel="stylesheet" />
+    <link href="contents/styles/css/loaders.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="loading-overlay">
+        <img src="contents/images/loading.GIF" class="loading-img" />
+    </div>
+    <!-- Res Menu Toggler -->
+    <input type="checkbox" id="menuTogglerMd" class="menu-toggler-md control-toggler" />
+    <label for="menuTogglerMd" class="menu-toggler-lbl-md overlay"></label>
+
+    <!-- Burger Menu Toggler -->
+    <input type="checkbox" id="menuToggler" class="menu-toggler control-toggler" />
+
+    <!-- Header -->
+    <header class="crv-header">
+        <div class="flex align-center full-height">
+
+            <!-- Res Menu-->
+            <label for="menuToggler" class="menu-lbl-xs icon-menu flex-item mr-end-auto"></label>
+
+            <!-- Logo -->
+            <h1 class="crv-logo flex-item">
+                <a href="./" class="logo-link">
+                    <img class="logo-img dark" src="/contents/images/logo.png" />
+                    <img class="logo-img light" src="/contents/images/logo-white.png" />
+                </a>
+            </h1>
+
+            <!-- Burger Menu-->
+            <label for="menuToggler" class="menuToggler-lbl pointer-cr hide-xs">
+                <i class="burger-menu-icon icon-menu"></i>
+                <span class="close-menu-lbl">
+                    <i class="icon-back"></i>
+                    <span class="close-lbl lang" key="closeMenu"></span>
+                </span>
+            </label>
+            <div class="burger-menu flex-item txt-center mr-end-auto">
+                <div class="menu-box txt-start">
+                    <div class="flex-xs flex-wrap-md flex-between">
+                        <div class="menu-col flex-item">
+                            <a href="iot-platform.html" class="menu-item-title hide-xs lang" key="iot"></a>
+                            <label for="menuIotPlatform" class="menu-item-title visible-xs">
+                                <a href="iot-platform.html" class="lang" key="iot"></a>
+                                <i class="icon-cheveron-outline-down"></i>
+                            </label>
+                            <input type="radio" id="menuIotPlatform" class="menu-box-toggler control-toggler" name="menu-box-toggler" checked />
+                            <div class="menu-box-items">
+                                <a href="iot-platform.html" class="menu-link lang" key="carvIot"></a>
+                                <a href="iot-platform.html" class="menu-link lang" key="whyCarv"></a>
+                                <a href="iot-platform.html" class="menu-link lang" key="iotArchi"></a>
+
+                            </div>
+
+                            <a href="iot-platform.html" class="menu-item-title hide-xs mr-t30 lang" key="useCases"></a>
+                            <label for="menuIotUseCases" class="menu-item-title visible-xs">
+                                <a href="iot-platform.html" class="lang" key="useCases"></a>
+                                <i class="icon-cheveron-outline-down"></i>
+                            </label>
+                            <input type="radio" id="menuIotUseCases" class="menu-box-toggler control-toggler" name="menu-box-toggler" />
+                            <div class="menu-box-items">
+                                <a href="enterprise.html" class="menu-link lang" key="enterprise"></a>
+                                <a href="industrial.html" class="menu-link lang" key="industrial"></a>
+                                <a href="small-business.html" class="menu-link lang" key="smallBusiness"></a>
+                                <a href="smart-city.html" class="menu-link lang" key="smartCity"></a>
+                                <a href="telecom.html" class="menu-link lang" key="telecom"></a>
+                            </div>
+                        </div>
+                        <div class="menu-col flex-item">
+                            <a href="solutions.html" class="menu-item-title hide-xs lang" key="solution"></a>
+                            <label for="menuSolution" class="menu-item-title visible-xs">
+                                <a href="solutions.html" class="lang" key="solution"></a>
+                                <i class="icon-cheveron-outline-down"></i>
+                            </label>
+                            <input type="radio" id="menuSolution" class="menu-box-toggler control-toggler" name="menu-box-toggler" />
+                            <div class="menu-box-items">
+                                <a href="solutions.html#one" class="menu-link bold-f lang" key="homeFifthProvideTitle"></a>
+                                <a href="automation.html" class="menu-link lang" key="automotive"></a>
+                                <a href="telecoms-providing.html" class="menu-link lang" key="telecomsProviding"></a>
+                                <a href="power-generation.html" class="menu-link lang" key="powerGeneration"></a>
+                                <a href="solutions.html#three" class="menu-link bold-f lang" key="automationControl"></a>
+                                <a href="atm-sites.html" class="menu-link lang" key="AtmSites"></a>
+                                <a href="data-center.html" class="menu-link lang" key="dataCenter"></a>
+                                <a href="oil-gas.html" class="menu-link lang" key="oilGas"></a>
+                                <a href="solutions.html#two" class="menu-link bold-f lang" key="homeFifthManagmTitle"></a>
+                                <a href="smart-cities.html" class="menu-link lang" key="smartCity"></a>
+                                <a href="smart-metering.html" class="menu-link lang" key="smartMetering"></a>
+                                <a href="smart-lighting.html" class="menu-link lang" key="smartLighting"></a>
+                                <a href="solar-generation.html" class="menu-link lang" key="solarGenerator"></a>
+                                <a href="solutions.html#four" class="menu-link bold-f lang" key="trackingFleet"></a>
+                                <a href="tracking-vehicles.html" class="menu-link lang" key="trackingVehicles"></a>
+                            </div>
+                        </div>
+                        <div class="menu-col flex-item">
+                            <a href="partners.html" class="menu-item-title hide-xs lang" key="partner"></a>
+                            <label for="menuPartners" class="menu-item-title visible-xs">
+                                <a href="partners.html" class="lang" key="partner"></a>
+                                <i class="icon-cheveron-outline-down"></i>
+                            </label>
+                            <input type="radio" id="menuPartners" class="menu-box-toggler control-toggler" name="menu-box-toggler" />
+                            <div class="menu-box-items">
+                                <a href="partners.html#PartnerProgram" class="menu-link lang" key="partnerProgram"></a>
+                                <a href="partners.html#PartnerProgram" class="menu-link lang" key="implementationPartner"></a>
+                                <a href="partners.html#PartnerProgram" class="menu-link lang" key="hardwarePartner"></a>
+                                <a href="partners.html#Testimonials" class="menu-link lang" key="testimonials"></a>
+                                <a href="partners.html#BePartner" class="menu-link lang" key="becomePartner"></a>
+                            </div>
+
+
+                            <a href="case-studies.html" class="menu-item-title mr-t30 lang" key="caseStudies"></a>
+
+                        </div>
+                        <div class="menu-col flex-item">
+                            <a href="company.html" class="menu-item-title hide-xs lang" key="company"></a>
+                            <label for="menuCompany" class="menu-item-title visible-xs">
+                                <a href="company.html" class="lang" key="company"></a>
+                                <i class="icon-cheveron-outline-down"></i>
+                            </label>
+                            <input type="radio" id="menuCompany" class="menu-box-toggler control-toggler" name="menu-box-toggler" />
+                            <div class="menu-box-items">
+                                <a href="company.html#OurCompany" class="menu-link lang" key="ourStory"></a>
+                                <a href="company.html#OurHistory" class="menu-link lang" key="ourHistory"></a>
+                                <a href="company.html#OurClients" class="menu-link lang" key="ourClients"></a>
+                                <a href="company.html" class="menu-link lang" key="mediaEvents"></a>
+                                <a href="download-center.html" class="menu-link lang" key="downloadCenter"></a>
+
+                            </div>
+                            <a href="community.html" class="menu-item-title mr-t30 hide-xs lang" key="comunnity"></a>
+                            <label for="menuCommunity" class="menu-item-title visible-xs">
+                                <a href="community.html" class="lang" key="comunnity"></a>
+                                <i class="icon-cheveron-outline-down"></i>
+                            </label>
+                            <input type="radio" id="menuCommunity" class="menu-box-toggler control-toggler" name="menu-box-toggler" />
+                            <div class="menu-box-items">
+                                <a href="resources.html" class="menu-link lang" key="resourcesHelpDocs"></a>
+                                <a href="white-paper.html" class="menu-link lang" key="whitePaper"></a>
+                                <a href="white-paper.html" class="menu-link lang" key="productGuide"></a>
+                                <a href="gdpr.html" class="menu-link lang" key="gdbr"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mr-t30-xs visible-xs signUp-xs">
+                        <a href="#" class="capitalize in-block mr-end10 lang" key="tryDemo"></a>
+                        <a href="signUp.html" class="signup-btn crv-btn primary-btn cornered-btn size-md uppercase lang" key="signUp"></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Res Extra Menu -->
+            <div class="extra-menu-lbl-xs">
+                <a href="signUp.html" class="crv-btn cornered uppercase flex-item lang" key="signUp"></a>
+            </div>
+
+            <!-- Menu-->
+            <div class="header-links-start flex-item txt-center mr-end-auto">
+                <a href="#OurCompany" class="header-link lang" key="ourStory"></a>
+                <a href="#OurHistory" class="header-link lang" key="ourHistory"></a>
+                <a href="#OurClients" class="header-link lang" key="ourClients"></a>
+            </div>
+
+            <!-- Estra Menu-->
+            <div class="header-links-end flex-item">
+                <a href="#" class="header-link lang" key="tryDemo"></a>
+                <a href="signUp.html" class="crv-btn primary-btn cornered-btn size-md uppercase lang" key="signUp"></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="automation bg_gradient-linear">
+        <div class="container">
+            <div class="first-section fit-section flex flex-col flex-center">
+                <div class="section-content flex flex-between align-center">
+                    <div class="section-desc flex-item full-width-xs txt-center-xs">
+                        <h2 class="section-title txt-lg lang" key="powerGenFirstSecTitle"></h2>
+                        <p class="section-txt mr-t30 lang" key="powerGenFirstSecDesc">
+                        </p>
+                    </div>
+                    <div class="section-img-wrapper flex-item hide-xs">
+                        <img src="/contents/images/SVG/temp-d/automation.svg" alt="automation image" />
+                    </div>
+                </div>
+                <div class="section-links txt-center mr-t50-xs">
+                    <a href="#OurCompany" class="crv-btn secondary-btn size-md size-long cornered-btn uppercase lang" key="features"> </a>
+                    <span class="block-xs mr-b10-xs"></span>
+                    <a href="#OurHistory"
+                       class="crv-btn secondary-btn size-md size-long cornered-btn uppercase mr-start10 zero-mrg-xs lang" key="overview">
+
+                    </a>
+                    <span class="block-xs mr-b10-xs"></span>
+                    <a href="#OurClients"
+                       class="crv-btn secondary-btn size-md size-long cornered-btn uppercase mr-start10 zero-mrg-xs lang" key="partner">
+
+                    </a>
+                </div>
+            </div>
+
+            <div class="second-section fit-section flex-xs align-center flex-between mr-t100-xs">
+                <div class="flex-item">
+                    <div class="section-img-wrapper mr-auto-xs mr-b30-xs">
+                        <img src="/contents/images/Surface.png" class="section-img" alt="automation image" />
+                    </div>
+                </div>
+                <div class="flex-item mr-start40">
+                    <p class="section-txt txt-md semi-bold-f lang" key="powerGenSecondSecTitle">
+                    </p>
+                    <p class="section-txt mr-t30 lang" key="powerGenSecondSecDesc1">
+                    </p>
+                    <p class="section-txt mr-t30 lang" key="powerGenSecondSecDesc2">
+                    </p>
+                    <p class="section-txt mr-t30 lang" key="powerGenSecondSecDesc3">
+                    </p>
+                </div>
+            </div>
+
+            <div class="third-section mr-t120 txt-center">
+                <h3 class="section-title txt-md lang" key="powerGenThirdSecTitle"></h3>
+                <p class="section-txt txt-md mr-t50 lang" key="powerGenThirdSecDesc">
+                </p>
+                <div class="flex-xs flex-between mr-t70 flex-wrap">
+                    <div class="item-content flex-item full-width-xs">
+                        <div class="item-img-wrapper">
+                            <img src="/contents/images/Surface.png" class="item-img" alt="automation image" />
+                        </div>
+                        <div class="item-txt mr-t10 lang" key="powerGenThirdSecItem1"></div>
+                    </div>
+                    <div class="item-content flex-item full-width-xs">
+                        <div class="item-img-wrapper">
+                            <img src="/contents/images/Surface.png" class="item-img" alt="automation image" />
+                        </div>
+                        <div class="item-txt mr-t10 lang" key="powerGenThirdSecItem2"></div>
+                    </div>
+                    <div class="item-content flex-item full-width-xs">
+                        <div class="item-img-wrapper">
+                            <img src="/contents/images/Surface.png" class="item-img" alt="automation image" />
+                        </div>
+                        <div class="item-txt mr-t10 lang" key="powerGenThirdSecItem3"></div>
+                    </div>
+                    <div class="item-content flex-item full-width-xs">
+                        <div class="item-img-wrapper">
+                            <img src="/contents/images/Surface.png" class="item-img" alt="automation image" />
+                        </div>
+                        <div class="item-txt mr-t10 lang" key="powerGenThirdSecItem4"></div>
+                    </div>
+                    <div class="item-content flex-item full-width-xs">
+                        <div class="item-img-wrapper">
+                            <img src="/contents/images/Surface.png" class="item-img" alt="automation image" />
+                        </div>
+                        <div class="item-txt mr-t10 lang" key="powerGenThirdSecItem5"></div>
+                    </div>
+                    <div class="item-content flex-item full-width-xs">
+                        <div class="item-img-wrapper">
+                            <img src="/contents/images/Surface.png" class="item-img" alt="automation image" />
+                        </div>
+                        <div class="item-txt mr-t10 lang" key="powerGenThirdSecItem6"></div>
+                    </div>
+                    <div class="item-content flex-item full-width-xs">
+                        <div class="item-img-wrapper">
+                            <img src="/contents/images/Surface.png" class="item-img" alt="automation image" />
+                        </div>
+                        <div class="item-txt mr-t10 lang" key="powerGenThirdSecItem7"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fourth-section mr-t150">
+                <div class="flex-xs align-center">
+                    <div class="item-img-wrapper flex-item mr-auto-xs">
+                        <img src="/contents/images/Surface.png" class="item-img" title="automation image" />
+                    </div>
+                    <div class="item-content flex-item ">
+                        <h5 class="item-title semi-bold-f mr-b50 lang" key="powerGenForthSecTitle"></h5>
+                        <p class="item-txt flex-xs">
+                            <span class="flex-item mr-end30 block-xs zero-mrg-xs lang" key="powerGenForthSecDesc1">
+                            </span>
+                            <span class="flex-item block-xs mr-t20-xs lang" key="powerGenForthSecDesc2">
+                            </span>
+                        </p>
+                        <p class="item-txt flex-xs mr-t20">
+                            <span class="flex-item mr-end30 block-xs zero-mrg-xs lang" key="powerGenForthSecDesc3">
+                            </span>
+                            <span class="flex-item block-xs mr-t20-xs lang" key="powerGenForthSecDesc4">
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex-xs align-center ">
+
+                    <div class="item-img-wrapper mr-auto-xs visible-xs">
+                        <img src="/contents/images/Surface.png" class="item-img" title="automation image" />
+                    </div>
+
+                    <div class="item-content flex-item">
+                        <h5 class="item-title semi-bold-f mr-b50 lang" key="powerGenForthSecTitle2"></h5>
+                        <p class="item-txt flex-xs">
+                            <span class="flex-item mr-end30 block-xs zero-mrg-xs lang" key="powerGenForthSecDesc5">
+                            </span>
+                            <span class="flex-item block-xs mr-t20-xs lang" key="powerGenForthSecDesc6">
+                            </span>
+                        </p>
+                        <p class="item-txt flex-xs mr-t20">
+                            <span class="flex-item mr-end30 block-xs zero-mrg-xs lang" key="powerGenForthSecDesc7">
+                            </span>
+                            <span class="flex-item block-xs mr-t20-xs lang" key="powerGenForthSecDesc8">
+                            </span>
+                        </p>
+                    </div>
+
+                    <div class="item-img-wrapper flex-item hide-xs">
+                        <img src="/contents/images/Surface.png" class="item-img" title="automation image" />
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="fifth-section txt-center">
+                <h3 class="section-title txt-md lang" key="powerGenFifthSecTitle1"></h3>
+                <p class="section-txt txt-md mr-t50 lang" key="powerGenFifthSecDesc1">
+
+                </p>
+
+                <h3 class="section-title txt-md mr-t120 lang" key="powerGenFifthSecTitle2">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </h3>
+
+                <p class="section-txt flex-xs mr-t50 txt-start">
+                    <span class="flex-item mr-end50 block-xs lang" key="powerGenFifthSecDesc2">
+                    </span>
+                    <span class="flex-item mr-end40 block-xs mr-t20-xs lang" key="powerGenFifthSecDesc3">
+                    </span>
+                </p>
+            </div>
+
+            <div class="sixth-section flex-xs align-stretch">
+                <div class="autmation-carousel-wrapper flex-item full-width-xs mr-b50-xs">
+                    <div class="autmation-carousel owl-carousel owl-theme">
+                        <div class="item-content">
+                            <div class="item-txt lang" key="powerGensixSecItem1Desc"></div>
+                            <h5 class="item-title lang" key="powerGensixSecItem1Title"></h5>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-txt lang" key="powerGensixSecItem2Desc"></div>
+                            <h5 class="item-title lang" key="powerGensixSecItem2Title"></h5>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-txt lang" key="powerGensixSecItem3Desc"></div>
+                            <h5 class="item-title lang" key="powerGensixSecItem3Title"></h5>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="flex-item">
+                    <ul class="section-list">
+                        <li class="list-item lang" key="powerGensixSecListItem1"></li>
+                        <li class="list-item lang" key="powerGensixSecListItem2"></li>
+                        <li class="list-item lang" key="powerGensixSecListItem3"></li>
+                        <li class="list-item lang" key="powerGensixSecListItem4"></li>
+                        <li class="list-item lang" key="powerGensixSecListItem5"></li>
+                        <li class="list-item lang" key="powerGensixSecListItem6"></li>
+                        <li class="list-item lang" key="powerGensixSecListItem7"></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Fooetr -->
+        <footer class="crv-footer">
+            <div class="container">
+                <article class="top-section">
+                    <div class="item-content">
+                        <div class="item-slogan lang" key="slogan"></div>
+                        <div class="item-main-txt lang" key="start"></div>
+                    </div>
+                    <div class="item-links">
+                        <a href="signUp.html" class="crv-btn primary-btn cornered-btn lang" key="signUp"></a>
+                        <a class="crv-btn cornered-btn lang" key="live"></a>
+                    </div>
+                    <div class="item-slogan light-f uppercase mr-t50 lang" key="secSlogan"></div>
+                    <a href="iot-platform.html" class="mr-t40 in-block">
+                        <span class="lang mr-end5" key="iot"></span>
+                        <i class="icon-radio-button-fill"></i>
+                    </a>
+                </article>
+
+                <article class="bottom-section flex-md flex-between align-end">
+                    <div class="start-section flex-item flex-xxs ">
+                        <div class="item-content flex-item">
+                            <h6 class="item-title lang" key="cervello"></h6>
+                            <input type="radio" id="FooterToggler1" name="FooterToggler" class="footer-toggler control-toggler" />
+                            <label for="FooterToggler1" class="footer-toggler-lbl">
+                                <span class="lbl-txt lang" key="cervello"></span>
+                                <span class="lbl-icon icon-cheveron-down"></span>
+                            </label>
+                            <div class="item-links">
+                                <a class="item-link lang" key='iot' href="iot-platform.html"></a>
+                                <a class="item-link lang" key='solution' href="solutions.html"></a>
+                                <a class="item-link lang" key='partner' href="partners.html"></a>
+                                <a class="item-link lang" key='company' href="company.html"></a>
+                                <a class="item-link lang" key='comunnity' href="community.html"></a>
+                            </div>
+                        </div>
+
+                        <div class="item-content flex-item">
+                            <h6 class="item-title lang" key="useCases"></h6>
+                            <input type="radio" id="FooterToggler2" name="FooterToggler" class="footer-toggler control-toggler" />
+                            <label for="FooterToggler2" class="footer-toggler-lbl">
+                                <span class="lbl-txt lang" key="useCases"></span>
+                                <span class="lbl-icon icon-cheveron-down"></span>
+                            </label>
+                            <div class="item-links">
+                                <a class="item-link lang" key="enterprise"></a>
+                                <a class="item-link lang" key="industrial"></a>
+                                <a class="item-link lang" key="smallBusiness"></a>
+                                <a class="item-link lang" key="smartCity"></a>
+                                <a href="telecom.html" class="item-link lang" key="telecom"></a>
+                            </div>
+                        </div>
+                        <div class="item-content flex-item">
+                            <h6 class="item-title lang" key="about"></h6>
+                            <input type="radio" id="FooterToggler3" name="FooterToggler" class="footer-toggler control-toggler" />
+                            <label for="FooterToggler3" class="footer-toggler-lbl">
+                                <span class="lbl-txt lang" key="about"></span>
+                                <span class="lbl-icon icon-cheveron-down"></span>
+                            </label>
+                            <div class="item-links">
+                                <a class="item-link lang" key="caseStudies" href="case-studies.html"></a>
+                                <a class="item-link lang" key="whoWeAre" href="iot-platform.html"></a>
+                                <a class="item-link lang" key="whyCervello" href="iot-platform.html"></a>
+                                <a class="item-link lang" key="contactUs" href="contactUs.html"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="end-section flex-item txt-end">
+                        <div class="social-media-links">
+                            <a href="" class="item-link">
+                                <i class="icon-twitter"></i>
+                            </a>
+                            <a href="" class="item-link">
+                                <i class="icon-linkedin"></i>
+                            </a>
+                            <a href="" class="item-link">
+                                <i class="icon-vimeo"></i>
+                            </a>
+                        </div>
+                        <div class="mr-t20 lang" key="copyRight"></div>
+                        <div class="language-container mr-t10"></div>
+
+                    </div>
+                </article>
+            </div>
+        </footer>
+    </section>
+
+    <script src="/contents/scripts/bundled/app.crv-main.min.js"></script>
+
+</body>
+</html>
